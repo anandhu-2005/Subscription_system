@@ -1,0 +1,21 @@
+{
+  "name": "subscription-management-system",
+  "version": "1.0.0",
+  "description": "Full-stack Subscription Management System for Odoo Hackathon",
+  "scripts": {
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "install:all": "npm run install:server && npm run install:client",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "author": "Odoo Hackathon Developer",
+  "license": "MIT"
+}
+
